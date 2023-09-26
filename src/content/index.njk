@@ -2,7 +2,82 @@
 permalink: index.html
 ---
 {% extends "layouts/base.njk" %}
+{% from "components/itemSpeaker.njk" import itemSpeaker %}
+{% from "components/itemSponsor.njk" import itemSponsor %}
 
 {% block content %}
-  <p>Hello world</p>
+
+  <div class="c-section">
+    <div class="l-container">
+      <h2>Une soirée</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, nesciunt commodi. Labore optio minus illo aliquid tempora eaque velit dignissimos omnis, quas inventore quia amet vero ex! Dolor, eaque itaque.</p>
+      <p>Voluptatum consectetur rem ipsa ullam? Autem reprehenderit vero maxime ipsa quasi praesentium cupiditate excepturi repudiandae, nisi veritatis minima expedita, deserunt sunt voluptatibus animi nobis ipsam ad beatae eos dignissimos nemo?</p>
+      {% if site.reservations %}
+        <p><a href="#">Réservations</a></p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+      <h2>Des invités</h2>
+      {% set speakers = collections.speakers %}
+      {% for item in speakers %}
+        {% if loop.first %}<ul>{% endif %}
+          <li>
+            {{ itemSpeaker({
+              image: item.data.image,
+              name: item.data.name,
+              surname: item.data.surname,
+              function: item.data.function
+            }) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+      <h2>Un événement</h2>
+      <p>
+        22 mars 2024<br>
+        IAD Blocry, Grande Salle<br>
+        19h00 - 23h00<br>
+        Entrée gratuite
+      </p>
+      <p>
+        Institut des Arts de Diffusion<br>
+        Route de Blocry, 5<br>
+        1340 Louvain-la-Neuve
+      </p>
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+      <blockquote>
+        <p>Old age is not for sissies</p>
+        <cite>Bette Davis</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+      <p>POUET</p>
+      {% for item in sponsors %}
+        {% if loop.first %}<ul>{% endif %}
+          <li>
+            {{ itemSponsor({
+              logo: item.logo,
+              company: item.company,
+              url: item.url
+            }) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
 {% endblock %}

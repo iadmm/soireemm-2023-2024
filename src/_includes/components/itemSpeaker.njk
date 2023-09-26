@@ -1,0 +1,7 @@
+{% macro itemSpeaker(params) %}
+  <article>
+    <p><img src="{{ params.image }}" alt="{{ params.name }} {{ params.surname }}"></p>
+    <h3>{{ params.name }} {{ params.surname }}</h3>
+    <p>{{ params.function }}</p>
+  </article>
+{% endmacro %}
