@@ -47,6 +47,10 @@ const QUOTES = [
     text: "Cette année c'est clair, je reprends le CBD.",
     author: "Rémi Vandenitte",
   },
+  {
+    text: "Un storyboard c'est comme un lacquemant, ça se fignole.",
+    author: "Pierre Neira",
+  },
 ];
 
 function init() {
