@@ -17,15 +17,13 @@
   --color-background: var(--color-gray-100);
   --color-accent: var(--color-yellow);
   --color-text-main: var(--color-white);
-  --color-text-offset: var(--color-gray-400);
+  --color-text-offset: var(--color-gray-500);
   --color-border: rgba(255, 255, 255, 0.18);
-}
 
-:root {
+  // font stacks
   --fontstack-main: "Satoshi", "Helvetica Neue", system-ui, sans-serif;
   --fontstack-alt: "Lora", "Georgia", serif;
-}
 
-:root {
+  // border radius
   --border-radius: 12px;
 }

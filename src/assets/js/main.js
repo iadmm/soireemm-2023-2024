@@ -1,1 +1,2 @@
-console.log("hello world");
+import { init as getQuote } from "./modules/quotes.js";
+getQuote();

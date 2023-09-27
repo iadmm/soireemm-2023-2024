@@ -1,11 +1,25 @@
+$breakpoints-map: (
+  small: "all and (min-width: 500px)",
+  medium: "all and (min-width: 750px)",
+  large: "all and (min-width: 1000px)",
+  xlarge: "all and (min-width: 1300px)",
+) !default;
+
 .l-split {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.l-split--1fr1fr {
-  @include breakpoint(medium) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: calc(18 / 16 * 1rem);
+.l-split--half {
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(18 / 16 * 1rem);
+}
+
+@each $name, $query in $breakpoints-map {
+  .l-split--half\@#{$name} {
+    @media #{$query} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: calc(18 / 16 * 1rem);
+    }
   }
 }

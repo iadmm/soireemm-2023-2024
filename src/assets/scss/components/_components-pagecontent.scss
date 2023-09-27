@@ -1,0 +1,13 @@
+.c-pagecontent {
+  --padding-block: calc(24 / 16 * 1rem);
+
+  padding-block: var(--padding-block);
+
+  @include breakpoint(medium) {
+    --padding-block: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    --padding-block: calc(75 / 16 * 1rem);
+  }
+}

@@ -19,8 +19,24 @@ $breakpoints-map: (
   gap: calc(18 / 16 * 1rem);
 }
 
+.l-grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.l-grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @each $name, $query in $breakpoints-map {
   @media #{$query} {
+    .l-grid--full\@#{$name} {
+      grid-template-columns: 1fr;
+    }
+
     .l-grid--2cols\@#{$name} {
       grid-template-columns: repeat(2, 1fr);
     }

@@ -1,0 +1,14 @@
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4 {
+  font-weight: 500;
+  font-family: var(--fontstack-main);
+  color: var(--color-text-main);
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+}
+
+.c-h2 {
+  font-size: clamp(29/16 * 1rem, 1rem + 2vw, 36/16 * 1rem);
+}

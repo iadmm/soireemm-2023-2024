@@ -18,88 +18,85 @@ permalink: index.html
     </div>
   </div>
 
-  <div class="c-section">
-    <div class="l-container">
-
-      <div class="l-grid  l-grid--2cols@medium">
-        <div>
-          <h2>Une soirée</h2>
-        </div>
-        <div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, nesciunt commodi. Labore optio minus illo aliquid tempora eaque velit dignissimos omnis, quas inventore quia amet vero ex! Dolor, eaque itaque.</p>
-          <p>Voluptatum consectetur rem ipsa ullam? Autem reprehenderit vero maxime ipsa quasi praesentium cupiditate excepturi repudiandae, nisi veritatis minima expedita, deserunt sunt voluptatibus animi nobis ipsam ad beatae eos dignissimos nemo?</p>
-          {% if site.reservations %}
-            <p><a href="#">Réservations</a></p>
-          {% endif %}
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="c-section">
-    <div class="l-container">
-      <h2>Des invités</h2>
-      {% set speakers = collections.speakers %}
-      {% for item in speakers %}
-        {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
-          <li>
-            {{ itemSpeaker({
-              image: item.data.image,
-              name: item.data.name,
-              surname: item.data.surname,
-              function: item.data.function
-            }) }}
-          </li>
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="c-section">
-    <div class="l-container">
-      <div class="l-grid  l-grid--2cols@large">
-        <div>
-          <h2>Un événement</h2>
-        </div>
-        <div class="l-grid  l-grid--2cols@small">
-          <p>
-            22 mars 2024, 19h00 - 23h00<br>
-            IAD Blocry, Grande Salle<br>
-            Entrée gratuite
-          </p>
-          <p>
-            Institut des Arts de Diffusion<br>
-            Route de Blocry, 5<br>
-            1340 Louvain-la-Neuve
-          </p>
+  <div class="c-pagecontent">
+    <div class="c-section">
+      <div class="l-container">
+        <div class="l-split  l-split--half@large">
+          <div>
+            <h2 class="c-h2">Une soirée</h2>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, nesciunt commodi. Labore optio minus illo aliquid tempora eaque velit dignissimos omnis, quas inventore quia amet vero ex! Dolor, eaque itaque.</p>
+            <p>Voluptatum consectetur rem ipsa ullam? Autem reprehenderit vero maxime ipsa quasi praesentium cupiditate excepturi repudiandae, nisi veritatis minima expedita, deserunt sunt voluptatibus animi nobis ipsam ad beatae eos dignissimos nemo?</p>
+            {% if site.reservations %}
+              <p><a href="#">Réservations</a></p>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="c-section">
-    <div class="l-container">
-      <blockquote>
-        <p>Old age is not for sissies</p>
-        <cite>Bette Davis</cite>
-      </blockquote>
+    <div class="c-section">
+      <div class="l-container">
+        <h2 class="c-h2">Des invités</h2>
+        {% set speakers = collections.speakers %}
+        {% for item in speakers %}
+          {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
+            <li>
+              {{ itemSpeaker({
+                image: item.data.image,
+                name: item.data.name,
+                surname: item.data.surname,
+                function: item.data.function
+              }) }}
+            </li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-
-  <div class="c-section">
-    <div class="l-container  l-container--medium">
-      {% for item in partners %}
-        {% if loop.first %}<ul class="c-partners">{% endif %}
-          <li>
-            {{ itemPartner({
-              logo: item.logo,
-              company: item.company,
-              url: item.url
-            }) }}
-          </li>
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
+    <div class="c-section">
+      <div class="l-container">
+        <div class="l-split  l-split--half@medium">
+          <div>
+            <h2 class="c-h2">Un événement</h2>
+          </div>
+          <div class="l-grid  l-grid--2cols@large">
+            <p>
+              22 mars 2024<br>
+              19h00 - 23h00<br>
+              IAD Blocry, Grande Salle<br>
+              Entrée gratuite
+            </p>
+            <p>
+              Institut des Arts de Diffusion<br>
+              Route de Blocry, 5<br>
+              1340 Louvain-la-Neuve
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-section">
+      <div class="l-container">
+        <blockquote class="c-quote  js-quote">
+          <p class="c-quote__text  js-quote-text">Old age is not for sissies</p>
+          <cite class="c-quote__author  js-quote-author">Bette Davis</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="c-section">
+      <div class="l-container  l-container--medium">
+        {% for item in partners %}
+          {% if loop.first %}<ul class="c-partners">{% endif %}
+            <li>
+              {{ itemPartner({
+                logo: item.logo,
+                company: item.company,
+                url: item.url
+              }) }}
+            </li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 
