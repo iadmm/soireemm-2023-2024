@@ -1,6 +1,14 @@
 .c-siteheader {
   margin: 0;
-  padding-block: calc(30 / 16 * 1rem);
+  padding-block: calc(48 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block: calc(90 / 16 * 1rem) calc(72 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-block: calc(120 / 16 * 1rem) calc(90 / 16 * 1rem);
+  }
 }
 
 .c-siteheader__inner {

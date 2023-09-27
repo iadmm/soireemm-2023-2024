@@ -16,7 +16,7 @@ const QUOTES = [
     author: "Christophe Pesesse",
   },
   {
-    text: "Même avec une bonne post-prod, une daube reste une daube.",
+    text: "Non! On peut pas tout faire en post-prod.",
     author: "Caroline Voglaire",
   },
   {
@@ -28,12 +28,24 @@ const QUOTES = [
     author: "Sylvia Minnaert",
   },
   {
-    text: "Le web sera créatif ou il ne sera pas.",
+    text: "Le web sera créatif ou ne sera pas.",
     author: "Julien Moreau",
   },
   {
     text: "Houdini ? C'est pas un soft de compta ça ?",
     author: "Thomas Scourneau",
+  },
+  {
+    text: "J'ai vu de la lumière, du coup je suis rentré.",
+    author: "Romain Martin",
+  },
+  {
+    text: "Pas de tablette graphique ? Pas de cara design.",
+    author: "Olivier Senny",
+  },
+  {
+    text: "Cette année c'est clair, je reprends le CBD.",
+    author: "Rémi Vandenitte",
   },
 ];
 

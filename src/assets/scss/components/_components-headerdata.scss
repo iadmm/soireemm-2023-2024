@@ -1,0 +1,16 @@
+.c-headerdata {
+  display: block;
+}
+
+.c-headerdata__date {
+  font-family: var(--fontstack-alt);
+  font-size: calc(26 / 16 * 1rem);
+  font-weight: 500;
+  margin-bottom: calc(6 / 16 * 1rem);
+  color: var(--color-accent);
+}
+
+.c-headerdata__title,
+.c-headerdata__edition {
+  margin: 0;
+}
