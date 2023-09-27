@@ -1,0 +1,10 @@
+.c-sitefooter {
+  color: var(--color-text-offset);
+}
+
+.c-sitefooter__content {
+  border-block-start: 1px solid rgba(255, 255, 255, 0.18);
+  padding-block: calc(24 / 16 * 1rem);
+  margin: 0;
+  text-align: center;
+}

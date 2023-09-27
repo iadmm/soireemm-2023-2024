@@ -1,0 +1,10 @@
+.c-ctalink {
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-accent);
+  text-decoration-style: wavy;
+  text-underline-offset: 6px;
+  color: var(--color-text-main);
+}
