@@ -1,15 +1,17 @@
 {% macro itemSpeaker(params) %}
-  <article>
-    <p>
+  <article class="c-speaker">
+    <p class="c-speaker__media">
       <img src="/assets/img/speakers/{{ params.image }}" 
            alt="{{ params.name }} {{ params.surname }}"
-           class="o-fluidimg"
+           class="c-speaker__img  o-fluidimg"
            width="600"
            height="600"
            loading="lazy"
            decoding="async">
     </p>
-    <h3>{{ params.name }} {{ params.surname }}</h3>
-    <p>{{ params.function }}</p>
+    <div class="c-speaker__content">
+      <h3 class="c-speaker__title">{{ params.name }} {{ params.surname }}</h3>
+      <p class="c-speaker__function">{{ params.function }}</p>
+    </div>
   </article>
 {% endmacro %}
