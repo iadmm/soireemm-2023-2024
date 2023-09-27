@@ -3,7 +3,7 @@ permalink: index.html
 ---
 {% extends "layouts/base.njk" %}
 {% from "components/itemSpeaker.njk" import itemSpeaker %}
-{% from "components/itemSponsor.njk" import itemSponsor %}
+{% from "components/itemPartner.njk" import itemPartner %}
 
 {% block content %}
 
@@ -21,7 +21,7 @@ permalink: index.html
   <div class="c-section">
     <div class="l-container">
 
-      <div class="l-split l-split--1fr1fr">
+      <div class="l-grid  l-grid--2cols@medium">
         <div>
           <h2>Une soirée</h2>
         </div>
@@ -58,7 +58,7 @@ permalink: index.html
 
   <div class="c-section">
     <div class="l-container">
-      <div class="l-split  l-split--1fr1fr">
+      <div class="l-grid  l-grid--2cols@large">
         <div>
           <h2>Un événement</h2>
         </div>
@@ -88,11 +88,11 @@ permalink: index.html
   </div>
 
   <div class="c-section">
-    <div class="l-container">
-      {% for item in sponsors %}
-        {% if loop.first %}<ul>{% endif %}
+    <div class="l-container  l-container--medium">
+      {% for item in partners %}
+        {% if loop.first %}<ul class="c-partners">{% endif %}
           <li>
-            {{ itemSponsor({
+            {{ itemPartner({
               logo: item.logo,
               company: item.company,
               url: item.url

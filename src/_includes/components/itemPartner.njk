@@ -1,0 +1,13 @@
+{% macro itemPartner(params) %}
+  <article class="c-partner">
+    <a href="{{ params.url }}">
+      <img src="/assets/img/partners/{{ params.logo }}"
+           alt="{{ params.company }}"
+           class="c-partner__logo  o-fluidimg"
+           width="300"
+           height="169"
+           loading="lazy"
+           decoding="async">
+    </a>
+  </article>
+{% endmacro %}

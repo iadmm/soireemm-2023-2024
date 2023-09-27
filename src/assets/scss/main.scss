@@ -11,6 +11,9 @@
 @import "base/_base-body.scss";
 @import "base/_base-spacing.scss";
 
+// objects
+@import "objects/_objects-fluidimg.scss";
+
 // layout
 @import "layout/_layout-container.scss";
 @import "layout/_layout-grid.scss";
@@ -21,3 +24,4 @@
 @import "components/_components-pagetitle.scss";
 @import "components/_components-section.scss";
 @import "components/_components-pagebanner.scss";
+@import "components/_components-partners.scss";

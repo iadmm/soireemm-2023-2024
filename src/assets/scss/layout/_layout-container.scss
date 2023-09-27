@@ -10,6 +10,10 @@
   }
 }
 
-.l-container--full {
-  padding-inline: 0;
+.l-container--medium {
+  max-width: 960px;
+}
+
+.l-container--small {
+  max-width: 720px;
 }

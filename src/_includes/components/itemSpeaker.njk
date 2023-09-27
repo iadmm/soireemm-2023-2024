@@ -1,6 +1,14 @@
 {% macro itemSpeaker(params) %}
   <article>
-    <p><img src="{{ params.image }}" alt="{{ params.name }} {{ params.surname }}"></p>
+    <p>
+      <img src="/assets/img/speakers/{{ params.image }}" 
+           alt="{{ params.name }} {{ params.surname }}"
+           class="o-fluidimg"
+           width="600"
+           height="600"
+           loading="lazy"
+           decoding="async">
+    </p>
     <h3>{{ params.name }} {{ params.surname }}</h3>
     <p>{{ params.function }}</p>
   </article>

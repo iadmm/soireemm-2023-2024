@@ -1,21 +1,21 @@
 const sponsors = [
   {
+    logo: "logo_sowalfin.png",
     company: "Sowalfin",
-    logo: "sowalfin.png",
     url: "https://www.sowalfin.be",
   },
   {
-    logo: "club.png",
+    logo: "logo_club.png",
     company: "Le Club",
     url: "https://www.iad-arts.be",
   },
   {
-    logo: "iad.png",
+    logo: "logo_iad.png",
     company: "Institut des Arts de Diffusion",
     url: "https://www.iad-arts.be",
   },
   {
-    logo: "wallonie-entreprendre.png",
+    logo: "logo_we.png",
     company: "Wallonie Entreprendre",
     url: "https://www.wallonie-entreprendre.be/",
   },
