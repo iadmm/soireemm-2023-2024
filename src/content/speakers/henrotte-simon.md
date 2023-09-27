@@ -2,5 +2,5 @@
 image: simon_henrotte.jpg
 name: Simon
 surname: Henrotte
-function: Développeur
+function: Tech Manager, Nodalview
 ---

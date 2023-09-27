@@ -1,6 +1,6 @@
 ---
 image: meg_pirson.jpg
-name: Marie Eglantine
+name: Marie-Églantine
 surname: Pirson
 function: Make-up artist
 ---
