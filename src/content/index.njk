@@ -9,12 +9,22 @@ permalink: index.html
 
   <div class="c-pagebanner">
     <div class="l-container">
-
-      <img src="/assets/img/banner/banner_2000.jpg" 
-            alt="An old couple on a crowded beach, facing the sea. The man is pointing at the horizon."
-            class="c-pagebanner__img"
-            decoding="async">
-
+      
+      <picture>
+        <source media="(min-width: 500px)"
+                srcset="/assets/img/banners/banner_1024.jpg 1024w,
+                        /assets/img/banners/banner_1200.jpg 1200w,
+                        /assets/img/banners/banner_1800.jpg 1800w"
+                width="1800"
+                height="1350"
+                sizes="100vw">
+        <img src="/assets/img/banners/banner_800.jpg" 
+             alt="An old couple on a crowded beach, facing the sea. The man is pointing at the horizon."
+             class="c-pagebanner__img  o-fluidimg"
+             width="800"
+             height="1066"
+             decoding="async">
+      </picture>
     </div>
   </div>
 
@@ -59,18 +69,23 @@ permalink: index.html
           <div>
             <h2 class="c-h2">Un événement</h2>
           </div>
-          <div class="l-grid  l-grid--2cols@large">
-            <p>
-              22 mars 2024<br>
-              19h00 - 23h00<br>
-              IAD Blocry, Grande Salle<br>
-              Entrée gratuite
-            </p>
-            <p>
-              Institut des Arts de Diffusion<br>
-              Route de Blocry, 5<br>
-              1340 Louvain-la-Neuve
-            </p>
+          <div>
+            <div class="l-grid  l-grid--2cols@large">
+              <p>
+                22 mars 2024<br>
+                19h00 - 23h00<br>
+                IAD Blocry, Grande Salle<br>
+                Entrée gratuite
+              </p>
+              <p>
+                Institut des Arts de Diffusion<br>
+                Route de Blocry, 5<br>
+                1340 Louvain-la-Neuve
+              </p>
+            </div>
+            {% if site.reservations %}
+              <p><a class="c-ctalink" href="#">Réservez vos places</a></p>
+            {% endif %}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const QUOTES = [
     author: "Salvatore Bordonaro",
   },
   {
-    text: "Avec l'âge on grandit moins, sauf de la prostate.",
+    text: "Avec l'âge je grandis moins, voire plus du tout.",
     author: "Jérôme Coupé",
   },
   {
@@ -24,7 +24,7 @@ const QUOTES = [
     author: "Damien Welsh",
   },
   {
-    text: "Les ours, les ours ... et le cerf de nos Ardennes alors ?",
+    text: "Les ours, les ours ... et le cerf de nos Ardennes alors?",
     author: "Sylvia Minnaert",
   },
   {
@@ -32,7 +32,7 @@ const QUOTES = [
     author: "Julien Moreau",
   },
   {
-    text: "Houdini ? C'est pas un soft de compta ça ?",
+    text: "Houdini? C'est pas un soft de compta ça?",
     author: "Thomas Scourneau",
   },
   {
@@ -40,7 +40,7 @@ const QUOTES = [
     author: "Romain Martin",
   },
   {
-    text: "Pas de tablette graphique ? Pas de cara design.",
+    text: "Pas de tablette graphique? Pas de cara design.",
     author: "Olivier Senny",
   },
   {
