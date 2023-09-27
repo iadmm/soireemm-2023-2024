@@ -1,0 +1,31 @@
+:root {
+  // main variable (not used in CSS)
+  --color-yellow: #efbc48;
+
+  --color-gray-100: #0c0d0e;
+  --color-gray-200: #303132;
+  --color-gray-300: #555656;
+  --color-gray-400: #858686;
+  --color-gray-500: #9e9e9f;
+  --color-gray-600: #cfcfcf;
+  --color-gray-700: #e7e7e7;
+  --color-gray-800: #fafafa;
+
+  --color-white: #ffffff;
+
+  // incident variables (used in CSS)
+  --color-background: var(--color-gray-100);
+  --color-accent: var(--color-yellow);
+  --color-text-main: var(--color-white);
+  --color-text-offset: var(--color-gray-300);
+  --color-border: rgba(255, 255, 255, 0.18);
+}
+
+:root {
+  --fontstack-main: "Satochi", "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-alt: "Lora", "Georgia", serif;
+}
+
+:root {
+  --border-radius: 12px;
+}

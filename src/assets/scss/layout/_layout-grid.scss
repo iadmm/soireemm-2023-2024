@@ -1,0 +1,36 @@
+// -------------------------------------
+// Settings
+// -------------------------------------
+
+$breakpoints-map: (
+  small: "all and (min-width: 500px)",
+  medium: "all and (min-width: 750px)",
+  large: "all and (min-width: 1000px)",
+  xlarge: "all and (min-width: 1300px)",
+) !default;
+
+.l-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc(18 / 16 * 1rem);
+}
+
+@each $name, $query in $breakpoints-map {
+  @media #{$query} {
+    .l-grid--2cols\@#{$name} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .l-grid--3cols\@#{$name} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .l-grid--4cols\@#{$name} {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

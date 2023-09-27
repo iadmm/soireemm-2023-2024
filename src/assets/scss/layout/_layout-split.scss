@@ -1,0 +1,11 @@
+.l-split {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.l-split--1fr1fr {
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(18 / 16 * 1rem);
+  }
+}

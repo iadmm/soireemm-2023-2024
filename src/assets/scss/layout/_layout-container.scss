@@ -1,0 +1,15 @@
+.l-container {
+  --padding-inline: calc(18 / 16 * 1rem);
+
+  padding-inline: var(--padding-inline);
+  max-width: 1650px;
+  margin: 0 auto;
+
+  @include breakpoint(medium) {
+    --padding-inline: calc(30 / 16 * 1rem);
+  }
+}
+
+.l-container--full {
+  padding-inline: 0;
+}

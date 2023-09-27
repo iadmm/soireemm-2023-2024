@@ -7,14 +7,33 @@ permalink: index.html
 
 {% block content %}
 
+  <div class="c-pagebanner">
+    <div class="l-container">
+
+      <img src="/assets/img/banner/banner_2000.jpg" 
+            alt="An old couple on a crowded beach, facing the sea. The man is pointing at the horizon."
+            class="c-pagebanner__img"
+            decoding="async">
+
+    </div>
+  </div>
+
   <div class="c-section">
     <div class="l-container">
-      <h2>Une soirée</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, nesciunt commodi. Labore optio minus illo aliquid tempora eaque velit dignissimos omnis, quas inventore quia amet vero ex! Dolor, eaque itaque.</p>
-      <p>Voluptatum consectetur rem ipsa ullam? Autem reprehenderit vero maxime ipsa quasi praesentium cupiditate excepturi repudiandae, nisi veritatis minima expedita, deserunt sunt voluptatibus animi nobis ipsam ad beatae eos dignissimos nemo?</p>
-      {% if site.reservations %}
-        <p><a href="#">Réservations</a></p>
-      {% endif %}
+
+      <div class="l-split l-split--1fr1fr">
+        <div>
+          <h2>Une soirée</h2>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, nesciunt commodi. Labore optio minus illo aliquid tempora eaque velit dignissimos omnis, quas inventore quia amet vero ex! Dolor, eaque itaque.</p>
+          <p>Voluptatum consectetur rem ipsa ullam? Autem reprehenderit vero maxime ipsa quasi praesentium cupiditate excepturi repudiandae, nisi veritatis minima expedita, deserunt sunt voluptatibus animi nobis ipsam ad beatae eos dignissimos nemo?</p>
+          {% if site.reservations %}
+            <p><a href="#">Réservations</a></p>
+          {% endif %}
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -23,7 +42,7 @@ permalink: index.html
       <h2>Des invités</h2>
       {% set speakers = collections.speakers %}
       {% for item in speakers %}
-        {% if loop.first %}<ul>{% endif %}
+        {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
           <li>
             {{ itemSpeaker({
               image: item.data.image,
@@ -39,18 +58,23 @@ permalink: index.html
 
   <div class="c-section">
     <div class="l-container">
-      <h2>Un événement</h2>
-      <p>
-        22 mars 2024<br>
-        IAD Blocry, Grande Salle<br>
-        19h00 - 23h00<br>
-        Entrée gratuite
-      </p>
-      <p>
-        Institut des Arts de Diffusion<br>
-        Route de Blocry, 5<br>
-        1340 Louvain-la-Neuve
-      </p>
+      <div class="l-split  l-split--1fr1fr">
+        <div>
+          <h2>Un événement</h2>
+        </div>
+        <div class="l-grid  l-grid--2cols@small">
+          <p>
+            22 mars 2024, 19h00 - 23h00<br>
+            IAD Blocry, Grande Salle<br>
+            Entrée gratuite
+          </p>
+          <p>
+            Institut des Arts de Diffusion<br>
+            Route de Blocry, 5<br>
+            1340 Louvain-la-Neuve
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -65,7 +89,6 @@ permalink: index.html
 
   <div class="c-section">
     <div class="l-container">
-      <p>POUET</p>
       {% for item in sponsors %}
         {% if loop.first %}<ul>{% endif %}
           <li>

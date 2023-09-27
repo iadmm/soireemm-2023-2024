@@ -1,3 +1,7 @@
 body {
-  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-size: clamp(18/16 * 1rem, 1rem + 0.33vw, 20/16 * 1rem);
 }

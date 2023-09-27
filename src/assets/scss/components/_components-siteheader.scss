@@ -1,0 +1,16 @@
+.c-siteheader {
+  margin: 0;
+  padding-block: calc(30 / 16 * 1rem);
+}
+
+.c-siteheader__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  gap: calc(30 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    grid-template-columns: 3fr 1fr;
+    gap: calc(18 / 16 * 1rem);
+  }
+}

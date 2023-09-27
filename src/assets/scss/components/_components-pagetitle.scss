@@ -1,0 +1,11 @@
+.c-pagetitle {
+  margin: 0;
+  font-weight: 360;
+  font-family: var(--fontstack-main);
+  font-size: clamp(60/16 * 1rem, 1rem + 12vw, 180/16 * 1rem);
+  line-height: 1.02;
+}
+
+.c-pagetitle > span {
+  display: block;
+}
