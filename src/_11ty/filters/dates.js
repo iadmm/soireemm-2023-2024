@@ -47,7 +47,7 @@ const dateFull = (date, locale = "en") => {
 const dateISO = (date) => {
   const jsDate = new Date(date);
   const dt = DateTime.fromJSDate(jsDate);
-  return dt.toISO();
+  return dt.toISODate();
 };
 
 /**
@@ -62,4 +62,10 @@ const dateYear = (date) => {
   return fullYear;
 };
 
-module.exports = { dateFeed, dateFormat, dateFull, dateISO, dateYear };
+module.exports = {
+  dateFeed,
+  dateFormat,
+  dateFull,
+  dateISO,
+  dateYear,
+};
