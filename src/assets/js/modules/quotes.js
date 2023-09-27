@@ -51,6 +51,14 @@ const QUOTES = [
     text: "Un storyboard c'est comme un lacquemant, ça se fignole.",
     author: "Pierre Neira",
   },
+  {
+    text: "Vous n'avez pas les bases.",
+    author: "Fabian Andry",
+  },
+  {
+    text: "L'objet Jeremy a une propriété couleur de cheveux.",
+    author: "Thomas Henrion",
+  },
 ];
 
 function init() {
