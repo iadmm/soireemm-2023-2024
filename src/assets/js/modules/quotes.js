@@ -16,7 +16,7 @@ const QUOTES = [
     author: "Christophe Pesesse",
   },
   {
-    text: "On ne peut jamais tout règler en post-production.",
+    text: "Même avec une bonne post-prod, une daube reste une daube.",
     author: "Caroline Voglaire",
   },
   {
@@ -26,6 +26,14 @@ const QUOTES = [
   {
     text: "Les ours, les ours ... et le cerf de nos Ardennes alors ?",
     author: "Sylvia Minnaert",
+  },
+  {
+    text: "Le web sera créatif ou il ne sera pas.",
+    author: "Julien Moreau",
+  },
+  {
+    text: "Houdini ? C'est pas un soft de compta ça ?",
+    author: "Thomas Scourneau",
   },
 ];
 
