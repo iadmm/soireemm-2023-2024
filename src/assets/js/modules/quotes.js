@@ -4,7 +4,7 @@ const QUOTES = [
     author: "Salvatore Bordonaro",
   },
   {
-    text: "Avec l'âge je grandis moins, voire plus du tout.",
+    text: "L'arthrose, ça n'aide pas pour le speed coding.",
     author: "Jérôme Coupé",
   },
   {
