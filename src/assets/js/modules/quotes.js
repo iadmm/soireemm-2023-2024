@@ -16,7 +16,7 @@ const QUOTES = [
     author: "Christophe Pesesse",
   },
   {
-    text: "Non! On peut pas tout faire en post-prod.",
+    text: "Même la post-production a ses limites.",
     author: "Caroline Voglaire",
   },
   {
@@ -32,7 +32,7 @@ const QUOTES = [
     author: "Julien Moreau",
   },
   {
-    text: "Houdini? C'est pas un soft de compta ça?",
+    text: "Non, Houdini n'est pas un soft de compta ...",
     author: "Thomas Scourneau",
   },
   {
