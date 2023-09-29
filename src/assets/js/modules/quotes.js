@@ -1,10 +1,10 @@
 const QUOTES = [
   {
-    text: "C'est pas demain la veille que Blender remplacera Maya.",
+    text: "C'est pas demain que Blender remplacera Maya.",
     author: "Salvatore Bordonaro",
   },
   {
-    text: "L'arthrose, ça n'aide pas pour le speed coding.",
+    text: "Mon début d'arthrose n'aide pas pour le speed coding.",
     author: "Jérôme Coupé",
   },
   {
@@ -12,16 +12,20 @@ const QUOTES = [
     author: "Fabrice Laroche",
   },
   {
-    text: "Je suis sûr d'une chose: la télévision, c'est mort !",
+    text: "Je suis sûr d'une chose: la télévision, c'est mort.",
     author: "Christophe Pesesse",
   },
   {
-    text: "Même la post-production a ses limites.",
+    text: "La post-production a ses limites, moi aussi.",
     author: "Caroline Voglaire",
   },
   {
     text: "C'est décidé, je partirai dans une belle explosion.",
     author: "Damien Welsh",
+  },
+  {
+    text: "Duik Angela, c'est clairement de la balle!",
+    author: "Claire Pineux",
   },
   {
     text: "Les ours, les ours ... et le cerf de nos Ardennes alors?",
