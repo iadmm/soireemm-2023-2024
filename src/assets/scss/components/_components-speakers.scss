@@ -13,66 +13,80 @@
 }
 
 .c-speaker {
-  --radius: 12px;
   margin-bottom: calc(24 / 16 * 1rem);
+}
+
+.c-speaker__link {
+  display: block;
+  text-decoration: none;
 }
 
 .c-speaker__media {
   position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: 12px;
   margin-bottom: calc(24 / 16 * 1rem);
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     background-image: url("../img/speaker_gradient.jpg");
-    z-index: 5;
     opacity: 0;
+
     animation-name: hue-rotate;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     transition: opacity 0.2s ease-out;
+
+    .c-speaker__link:hover &,
+    .c-speaker__link:focus & {
+      opacity: 0.21;
+    }
   }
 }
 
-.c-speaker:hover .c-speaker__media::after,
-.c-speaker:focus .c-speaker__media::after {
-  opacity: 0.3;
-}
-
 .c-speaker__img {
-  position: relative;
-  z-index: 10;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   mix-blend-mode: screen;
 
   transform: rotate(0deg) scale(1);
   transition: transform 0.2s ease-out;
-}
 
-.c-speaker:hover .c-speaker__img,
-.c-speaker:focus .c-speaker__img {
-  transform: rotate(0.5deg) scale(1.012);
+  .c-speaker__link:hover &,
+  .c-speaker__link:focus & {
+    transform: rotate(0.5deg) scale(1.012);
+  }
 }
 
 .c-speaker__title {
   margin-bottom: calc(6 / 16 * 1rem);
   font-weight: 500;
-  font-size: calc(23 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   line-height: 1.2;
   font-family: var(--fontstack-main);
   color: var(--color-text-main);
+
+  .c-speaker__link:hover &,
+  .c-speaker__link:focus & {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
 }
 
 .c-speaker__function {
   margin-bottom: 0;
   font-weight: 500;
-  font-size: calc(18 / 16 * 1rem);
+  font-size: 1rem;
   font-family: var(--fontstack-alt);
   color: var(--color-text-offset);
 }

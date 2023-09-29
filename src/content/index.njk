@@ -53,6 +53,7 @@ permalink: index.html
           {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
             <li>
               {{ itemSpeaker({
+                url: item.data.url,
                 image: item.data.image,
                 name: item.data.name,
                 surname: item.data.surname,
