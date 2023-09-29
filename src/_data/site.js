@@ -8,6 +8,8 @@ module.exports = {
   authorTwitter: "@jeromecoupe",
   eventDate: new Date("2024-03-22"),
   buildDate: new Date(),
-  bookings: true,
-  bookingsUrl: "https://www.webstoemp.com",
+  bookings: {
+    active: true,
+    url: "https://www.webstoemp.com",
+  },
 };
