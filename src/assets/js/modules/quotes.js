@@ -24,7 +24,7 @@ const QUOTES = [
     author: "Damien Welsh",
   },
   {
-    text: "Duik Angela, c'est clairement de la balle!",
+    text: "Angela? C'est ma nouvelle meilleure copine.",
     author: "Claire Pineux",
   },
   {
