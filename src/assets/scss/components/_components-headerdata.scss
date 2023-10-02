@@ -1,12 +1,16 @@
 .c-headerdata {
-  display: block;
+  @include breakpoint(large) {
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.3);
+    margin-inline-start: calc(42 / 16 * 1rem);
+    padding-inline-start: calc(48 / 16 * 1rem);
+  }
 }
 
 .c-headerdata__date {
   font-family: var(--fontstack-alt);
   font-size: clamp(21 / 16 * 1rem, 1rem + 1vw, 26 / 16 * 1rem);
   font-weight: 500;
-  margin-bottom: calc(6 / 16 * 1rem);
+  margin-block-end: calc(6 / 16 * 1rem);
   color: var(--color-accent);
 }
 
