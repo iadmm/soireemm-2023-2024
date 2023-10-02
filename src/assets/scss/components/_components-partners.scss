@@ -24,4 +24,9 @@
 
 .c-partner__logo {
   filter: grayscale(1);
+  transition: opacity 0.2s ease-out;
+}
+
+.c-partners:hover .c-partner__logo:not(:hover) {
+  opacity: 0.5;
 }
