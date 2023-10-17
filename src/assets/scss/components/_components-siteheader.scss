@@ -17,7 +17,7 @@
   align-items: end;
   gap: calc(30 / 16 * 1rem);
 
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     grid-template-columns: auto 1fr;
     gap: 0;
   }
