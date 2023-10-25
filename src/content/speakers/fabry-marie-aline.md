@@ -2,6 +2,6 @@
 image: anonymous.jpg
 name: Unknown
 surname: Guest
-function: Icognito artist
+function: Incognito artist
 url: "https://www.iad-arts.be"
 ---
