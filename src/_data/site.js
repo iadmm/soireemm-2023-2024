@@ -6,7 +6,7 @@ module.exports = {
   metaImage: "https://metiers.iadmm.be/assets/img/metaimage.jpg",
   authorName: "IAD MM",
   authorTwitter: "@jeromecoupe",
-  eventDate: new Date("2023-11-29"),
+  eventDate: new Date("2023-11-30"),
   buildDate: new Date(),
   bookings: {
     active: true,
