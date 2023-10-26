@@ -10,6 +10,6 @@ module.exports = {
   buildDate: new Date(),
   bookings: {
     active: true,
-    url: "https://www.webstoemp.com",
+    url: "https://forms.gle/oxM6qgd9TaZB5rmCA",
   },
 };
