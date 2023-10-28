@@ -1,0 +1,10 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+}
+
+a:hover {
+  color: inherit;
+  text-decoration-color: var(--color-accent);
+}
