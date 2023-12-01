@@ -73,7 +73,7 @@ permalink: index.html
           <div>
             <div class="l-split l-split--half@small  l-split--full@medium  l-split--half@large">
               <p>
-                {{ site.eventDate|dateFull("fr") }}<br>
+                <time datetime="{{ site.eventDate|dateISO }}">{{ site.eventDate|dateFull("fr") }}</time><br>
                 19h00 - 23h00<br>
                 IAD Blocry, Grande Salle<br>
                 Entrée gratuite
