@@ -10,7 +10,7 @@ module.exports = {
   buildDate: new Date(),
   repositoryUrl: "https://github.com/jeromecoupe/soireemm-2023-2024",
   bookings: {
-    active: true,
+    active: false,
     url: "https://forms.gle/oxM6qgd9TaZB5rmCA",
   },
 };
